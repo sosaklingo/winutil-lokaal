@@ -1,5 +1,7 @@
 # WinUtil Lokaal
 
+**Nederlands** · [English](README.en.md)
+
 Een Nederlandstalig startpakket voor de Windows Utility (WinUtil) van Chris Titus Tech. Deze uitgave bevat de originele PowerShell-release **26.10.28**. Na het uitpakken opent WinUtil als grafisch venster vanaf de lokale schijf, zonder dat de starter het script opnieuw downloadt.
 
 **Voor Windows 11 met Windows PowerShell 5.1 en toegang tot een administratoraccount.** De Windows-interface van WinUtil zelf is hoofdzakelijk Engelstalig.
