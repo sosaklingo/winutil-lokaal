@@ -12,7 +12,17 @@ try {
         throw 'winutil-26.10.28.ps1 ontbreekt. Pak de volledige ZIP uit in dezelfde map.'
     }
 
-    $actualHash = (Get-FileHash -LiteralPath $winUtilPath -Algorithm SHA256).Hash
+    $sha256 = [System.Security.Cryptography.SHA256]::Create()
+    try {
+        $fileStream = [System.IO.File]::OpenRead($winUtilPath)
+        try {
+            $actualHash = [BitConverter]::ToString($sha256.ComputeHash($fileStream)).Replace('-', '')
+        } finally {
+            $fileStream.Dispose()
+        }
+    } finally {
+        $sha256.Dispose()
+    }
     if ($actualHash -ne $expectedHash) {
         throw "SHA-256 wijkt af. Verwacht: $expectedHash. Gevonden: $actualHash."
     }
