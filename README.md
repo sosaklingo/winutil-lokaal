@@ -33,6 +33,19 @@
 
 WinUtil kan Windows-instellingen wijzigen nadat je in de interface een actie kiest. Lees de beschrijving vóór je een tweak toepast.
 
+## Beveiligde start en taal
+
+De starter controleert eerst SHA-256 en controleert na UAC opnieuw de exacte bytes. Alleen die geverifieerde bytes worden in een tijdelijke map onder Program Files geplaatst, met toegangsrechten voor Administrators en SYSTEM. WinUtil draait vanuit die map; na afloop wordt de map verwijderd. Dit beperkt bestandsvervanging tussen controle en uitvoering, mits de starter zelf vertrouwd is en Program Files normale Windows-machtigingen heeft. SHA-256 is geen digitale handtekening. Gebruik alleen een vertrouwde download en lees de tweaks voordat je ze toepast.
+
+De starter kiest Nederlands of Engels op basis van de Windows-weergavetaal. Je kunt de taal ook expliciet kiezen:
+
+~~~powershell
+.\WinUtil-Lokaal.ps1 -Mode Verify -Language NL
+.\WinUtil-Lokaal.ps1 -Mode Offline -Language EN
+~~~
+
+De WinUtil-interface zelf blijft hoofdzakelijk Engelstalig. De GitHub Actions-versiecontrole meldt wekelijks nieuwere officiële releases, zonder bestanden automatisch te wijzigen. De automatische pakkettest controleert hash, syntaxis en foutgevallen; een handmatige GUI- en UAC-test op Windows 11 blijft nodig.
+
 ## Problemen oplossen
 
 | Wat je ziet | Wat je kunt doen |
