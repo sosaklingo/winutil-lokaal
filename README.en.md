@@ -2,13 +2,17 @@
 
 [Nederlands](README.md) · **English**
 
+## Project overview
+
+Local WinUtil copy for Windows 11 with Dutch and English guides, SHA-256 and PowerShell syntax verification, and an offline launcher.
+
 This package contains the original PowerShell release **26.10.28** of Chris Titus Tech’s Windows Utility (WinUtil). Once extracted, the launcher opens WinUtil in a separate window using the script included in the package.
 
 You’ll need **Windows 11, Windows PowerShell 5.1, and access to a Windows administrator account**. The WinUtil interface is primarily in English.
 
 ## Download and launch
 
-1. Sign in to GitHub with an account that has access to this repository. Open the repository and select **Code → Download ZIP**. [Download the ZIP directly](https://github.com/sosaklingo/winutil-lokaal/archive/refs/heads/main.zip).
+1. Open this public GitHub repository and select **Code → Download ZIP**. [Download the ZIP directly](https://github.com/sosaklingo/winutil-lokaal/archive/refs/heads/main.zip).
 2. In File Explorer, right-click the ZIP and choose **Extract All**. Keep all the extracted files together.
 3. Double-click **Start-WinUtil.cmd** in the extracted folder. Use **Start-WinUtil-Offline.cmd** to open WinUtil in offline mode.
 4. Confirm the Windows User Account Control (UAC) prompt. A separate window titled **WinUtil** should appear. If PowerShell stays in front, press **Alt+Tab** to switch to WinUtil.
