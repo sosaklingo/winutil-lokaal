@@ -25,6 +25,19 @@ You’ll need **Windows 11, Windows PowerShell 5.1, and access to a Windows admi
 
 WinUtil can change Windows settings when you apply an action in its interface. Read the description of each tweak before applying it.
 
+## Secure launch and language
+
+The launcher checks SHA-256 before elevation and verifies the exact bytes again after UAC. Only those verified bytes are placed in a temporary directory under Program Files, with access restricted to Administrators and SYSTEM. WinUtil runs from that directory, which is removed afterward. This reduces file substitution between verification and execution, assuming a trusted launcher and normal Windows permissions on Program Files. SHA-256 is not a digital signature. Use a trusted download and review tweaks before applying them.
+
+The launcher selects Dutch or English according to the Windows display language. You may also select a language explicitly:
+
+~~~powershell
+.\WinUtil-Lokaal.ps1 -Mode Verify -Language EN
+.\WinUtil-Lokaal.ps1 -Mode Offline -Language NL
+~~~
+
+The WinUtil interface itself remains primarily English. The GitHub Actions version check reports newer official releases weekly, without automatically changing files. The automated package test checks hashes, syntax and failure cases; a manual GUI and UAC test on Windows 11 is still required.
+
 ## Troubleshooting
 
 | What you see | What to do |
