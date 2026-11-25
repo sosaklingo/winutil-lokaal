@@ -2,13 +2,25 @@
 
 **Nederlands** · [English](README.en.md)
 
-Een Nederlandstalig startpakket voor de Windows Utility (WinUtil) van Chris Titus Tech. Deze uitgave bevat de originele PowerShell-release **26.10.28**. Na het uitpakken opent WinUtil als grafisch venster vanaf de lokale schijf, zonder dat de starter het script opnieuw downloadt.
+## Projectoverzicht / Project overview
 
-**Voor Windows 11 met Windows PowerShell 5.1 en toegang tot een administratoraccount.** De Windows-interface van WinUtil zelf is hoofdzakelijk Engelstalig.
+**Nederlands (NL)** — Lokale WinUtil-kopie voor Windows 11 met Nederlandstalige en Engelstalige handleidingen, SHA-256- en PowerShell-syntaxiscontrole en een offline starter.
+
+**English (EN)** — Local WinUtil copy for Windows 11 with Dutch and English guides, SHA-256 and PowerShell syntax verification, and an offline launcher.
+
+| Nederlands | English |
+| --- | --- |
+| Originele PowerShell-release **26.10.28** van Chris Titus Tech | Original PowerShell release **26.10.28** by Chris Titus Tech |
+| Start lokaal zonder het WinUtil-script opnieuw te downloaden | Launch locally without downloading the WinUtil script again |
+| Windows 11, Windows PowerShell 5.1 en administratoraccount vereist | Windows 11, Windows PowerShell 5.1 and an administrator account required |
+| Offline starter; downloads en appinstallaties vereisen internet | Offline launcher; downloads and app installations require internet access |
+| De WinUtil-interface zelf is hoofdzakelijk Engelstalig | The WinUtil interface itself is primarily in English |
+
+**Handleiding / User guide:** [Nederlands](#downloaden-en-starten) · [English](README.en.md)
 
 ## Downloaden en starten
 
-1. Meld je aan bij GitHub met een account dat toegang heeft tot deze repository. Kies **Code → Download ZIP**. [Download de ZIP rechtstreeks](https://github.com/sosaklingo/winutil-lokaal/archive/refs/heads/main.zip).
+1. Open deze openbare GitHub-repository en kies **Code → Download ZIP**. [Download de ZIP rechtstreeks](https://github.com/sosaklingo/winutil-lokaal/archive/refs/heads/main.zip).
 2. Klik in Verkenner met de rechtermuisknop op de ZIP en kies **Alles uitpakken**. Houd de bestanden bij elkaar.
 3. Dubbelklik in de uitgepakte map op **Start-WinUtil.cmd**. Kies **Start-WinUtil-Offline.cmd** als je WinUtil in offline-modus wilt openen.
 4. Bevestig de Windows-melding voor administratorrechten. Daarna hoort een apart venster met de titel **WinUtil** te verschijnen. Gebruik zo nodig **Alt+Tab** om van het consolevenster naar WinUtil te wisselen.
